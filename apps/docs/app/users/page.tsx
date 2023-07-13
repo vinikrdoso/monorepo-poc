@@ -1,21 +1,21 @@
 "use client";
 
-// import { User } from "../../types/user";
+import { User } from "../../types/user";
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 
-// async function getUsers() {
-//   const res = await fetch("https://jsonplaceholder.typicode.com/users");
-//   const users = (await res.json()) as User[];
-//   return users;
-// }
+async function getUsers() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const users = (await res.json()) as User[];
+  return users;
+}
 
 export default function ListUsers() {
   const [count, setCount] = React.useState(0);
 
   const { data, isLoading, isFetching, error } = useQuery({
     queryKey: ["hydrate-users"],
-    // queryFn: () => getUsers(),
+    queryFn: () => getUsers(),
     
   });
 
@@ -45,7 +45,7 @@ export default function ListUsers() {
             gap: 20,
           }}
         >
-          {data.map((user) => (
+          {data?.map((user) => (
             <div
               key={user.id}
               style={{ border: "1px solid #ccc", textAlign: "center" }}
