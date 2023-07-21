@@ -9,17 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.1.1",
     "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "*",
-    "store": "*"
+    "react-hook-form": "^7.45.1",
+    "store": "*",
+    "ui": "*"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "autoprefixer": "^10.4.14",
     "eslint-config-custom": "*",
+    "tailwindcss": "^3.3.3",
     "tsconfig": "*",
     "typescript": "^4.5.3"
   }

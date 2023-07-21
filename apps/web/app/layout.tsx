@@ -1,3 +1,4 @@
+import "ui/styles.css";
 import {Providers} from "store";
 
 export default function RootLayout({
