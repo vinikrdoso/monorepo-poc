@@ -2,6 +2,7 @@
 
 import { User } from "../../types/user";
 import { useQuery } from "@tanstack/react-query";
+import Image from "next/image";
 import React from "react";
 
 async function getUsers() {
@@ -50,7 +51,7 @@ export default function ListUsers() {
               key={user.id}
               style={{ border: "1px solid #ccc", textAlign: "center" }}
             >
-              <img
+              <Image
                 src={`https://robohash.org/${user.id}?set=set2&size=180x180`}
                 alt={user.name}
                 style={{ height: 180, width: 180 }}

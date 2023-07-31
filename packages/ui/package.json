@@ -13,7 +13,7 @@
     "@types/react-dom": "^18.2.0",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
-    "react": "^17.0.2",
+    "react": "^18.2.0",
     "tsconfig": "*",
     "typescript": "^4.5.2"
   },
@@ -21,6 +21,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.263.0",
+    "styled-components": "^6.0.5",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.6"
   }

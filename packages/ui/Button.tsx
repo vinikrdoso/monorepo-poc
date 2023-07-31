@@ -1,7 +1,9 @@
-"use client";
-
-import * as React from "react";
+'use client'
 
 export const Button = () => {
-  return <button onClick={() => alert("boop")}>Boop</button>;
+  return (
+    <button className='bg-BLACK_TRANSPARENT hover:bg-slate-100 hover:text-slate-900 w-64 h-20'>
+      Boop
+    </button>
+  );
 };

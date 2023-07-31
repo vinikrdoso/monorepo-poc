@@ -1,5 +1,7 @@
+"use client"
+
 import "ui/styles.css";
-import {Providers} from "store";
+import Providers from './providers'
 
 export default function RootLayout({
   children,
@@ -12,7 +14,7 @@ export default function RootLayout({
           <Providers>
             {children}
           </Providers>
-        </body>
+      </body>
     </html>
   );
 }

@@ -1,4 +1,6 @@
-import {Providers} from "store";
+"use client"
+
+import Providers from './providers'
 
 export default function RootLayout({
   children,
