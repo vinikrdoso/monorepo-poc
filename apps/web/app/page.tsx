@@ -10,12 +10,12 @@ export default function Page() {
         <p>div demo with tailwind</p>
         <p>another content</p>
       </div>
-      <div className="w-96 flex items-center justify-center">
-        <div className="flex flex-wrap flex-row">
+      <div className="grid  grid-cols-3 gap-10 mb-4">
+        {/* <div className="flex flex-wrap flex-row"> */}
           <Button />
           <ButtonTest label="Primary button" />
           <ButtonTest label="Secondary button" appearance="secondary" />
-        </div>
+        {/* </div> */}
       </div>
       <DownloadCard title="test" description="teste" />
       <FormWithHookForm />
